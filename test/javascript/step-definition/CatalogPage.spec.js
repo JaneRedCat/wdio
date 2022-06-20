@@ -6,7 +6,7 @@ const checkoutobject = require('../pageobjects/Checkout.page');
 
 Given(/^User is on Home page$/,()=>{
     homeobject.open(); 
-    homeobject.verifyCurrentPage();
+    //homeobject.verifyCurrentPage();
 });
 
 When(/^User clicks Catalog link$/,()=>{

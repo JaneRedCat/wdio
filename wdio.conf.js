@@ -40,6 +40,8 @@ exports.config = {
         './test/resources/features/CatalogPage.feature', 
         './test/resources/features/AddToCart.feature',
         './test/resources/features/EmailAlreadyUsedOnCheckout.feature',
+        './test/resources/features/EmailValidaton.feature',
+        //'./test/resources/features/PasswordMatch.feature',
         './test/resources/features/CompanyContact.feature',
         //'./test/resources/features/Login.feature',
     ],
@@ -95,7 +97,7 @@ exports.config = {
         'goog:chromeOptions': {
 
             //args: ['--headless', '--no-sandbox', '--disable-gpu', '--disable-dev-shm-usage', '--window-size=1200,1100', '--disable-translate', '--disable-extensions', '--disable-background-networking', '--disable-sync', '--disable-default-apps', '--mute-audio', '--no-first-run', '--disable-prompt-on-repost'],
-            args: ['--window-size=1024,768', '--disable-translate', '--disable-extensions', '--disable-background-networking', '--disable-sync', '--disable-default-apps', '--mute-audio', '--no-first-run', '--disable-prompt-on-repost'],
+            args: ['--window-size=1500,900', '--disable-translate', '--disable-extensions', '--disable-background-networking', '--disable-sync', '--disable-default-apps', '--mute-audio', '--no-first-run', '--disable-prompt-on-repost'],
             prefs: {'download.default_directory': downloadDir,'safebrowsing.enabled': 'False'},
               
         },    
@@ -138,8 +140,9 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-	baseUrl: 'https://infodekoor-uat.gammatest.net/',
-    //baseUrl: 'http://mdm.7p-group.com/mdm5qatest/',    
+	//baseUrl: 'https://opencart.gammatest.net/',
+    baseUrl: 'https://infodekoor-uat.gammatest.net/',
+        
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 30000,
